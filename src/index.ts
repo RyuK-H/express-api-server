@@ -1,7 +1,18 @@
-import express, { Application } from "express";
+import express from "express";
 
-const app: Application = express();
+class App {
+  public app: express.Application;
 
-app.listen(5000, () => {
-  console.log("server runnning");
-});
+  public static bootstrap(): App {
+    return new App();
+  }
+
+  constructor() {
+    this.app = express();
+    this.app.get("/", (_req: express.Request, res: express.Response) => {
+      res.send("Hello world");
+    });
+  }
+}
+
+export default App;
