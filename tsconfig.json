@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@root/*": ["./src/*"]
+    },
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "dist/",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "locale": "ko",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noEmit": false,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "skipLibCheck": false,
+    "forceConsistentCasingInFileNames": true,
+  },
+  "include": ["src/*.ts"]
+}
