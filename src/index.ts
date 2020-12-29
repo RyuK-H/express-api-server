@@ -1,14 +1,7 @@
-console.log("hello");
+import express, { Application } from "express";
 
-const a = "";
-const areYouCool = true;
-const answer = 42;
-const typescript = "great";
-const greetings = `
-Hello, Readers!
-Welcome to TypeScript.
-`;
-const hasType: Object = {
-  TypeScript: true,
-  JavaScript: false,
-};
+const app: Application = express();
+
+app.listen(5000, () => {
+  console.log("server runnning");
+});
